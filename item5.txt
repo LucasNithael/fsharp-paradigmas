@@ -2,8 +2,12 @@
 open System
 
 // 1. Funções Anônimas (lambda)
-let square = fun x -> x * x
-printfn "%d" (square 5)  // Saída: 25
+//let square = fun x -> x * x
+//printfn "%d" (square 5)  // Saída: 25
+// let numbers = [1; 2; 3; 4; 5]
+// let squares = List.map (fun x -> x * x) numbers
+// printfn "%A" squares
+
 
 // 2. Funções de Alta Ordem
 // let applyTwice f x = f (f x)

@@ -1,27 +1,20 @@
-﻿// 1. Olá Mundo
-// [<EntryPoint>]
-// let main argv =
-//     printfn "Olá Mundo"
-//     0  // Código de saída
+﻿
 
-// 2. Sequência de Fibonacci usando Recursão
-// let rec fibonacci n =
-//     if n <= 1 then n
-//     else fibonacci (n - 1) + fibonacci (n - 2)
+open System
 
-// // Exemplo de uso
-// printfn "Fibonacci de 10 é: %d" (fibonacci 10)  // Saída: 55
+let solveQuadraticEquation a b c =
+    let delta = b * b - 4.0 * a * c
 
-// 3. Ordenação usando QuickSort (Sem usar variáveis, apenas valores)
-// let rec quicksort list =
-//     match list with
-//     | [] -> []
-//     | pivot :: tail ->
-//         let smallerOrEqual = [ for x in tail do if x <= pivot then yield x ]
-//         let larger = [ for x in tail do if x > pivot then yield x ]
-//         quicksort smallerOrEqual @ [pivot] @ quicksort larger
+    if delta < 0.0 then
+        printfn "A equação não tem raízes reais."
+    elif delta = 0.0 then
+        let x = -b / (2.0 * a)
+        printfn "A equação tem uma raiz real: x = %f" x
+    else
+        let sqrtDelta = Math.Sqrt(delta)
+        let x1 = (-b + sqrtDelta) / (2.0 * a)
+        let x2 = (-b - sqrtDelta) / (2.0 * a)
+        printfn "A equação tem duas raízes reais: x1 = %f, x2 = %f" x1 x2
 
-// // Exemplo de uso
-// let sortedList = quicksort [3; 6; 8; 5; 2; 7; 4; 1]
-// printfn "%A" sortedList  // Saída: [1; 2; 3; 4; 5; 6; 7; 8]
-
+// Exemplo de uso:
+solveQuadraticEquation 1.0 -3.0 2.0  // Saída esperada: x1 = 2.000000, x2 = 1.000000

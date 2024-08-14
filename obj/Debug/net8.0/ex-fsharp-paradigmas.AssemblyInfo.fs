@@ -10,7 +10,7 @@ open System.Reflection
 [<assembly: System.Reflection.AssemblyCompanyAttribute("ex-fsharp-paradigmas")>]
 [<assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")>]
 [<assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")>]
-[<assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+301756570a3e22acf922309cf9f37e23d915ef14")>]
+[<assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+72e9e159763949b912c4dbc5ca2380820722363b")>]
 [<assembly: System.Reflection.AssemblyProductAttribute("ex-fsharp-paradigmas")>]
 [<assembly: System.Reflection.AssemblyTitleAttribute("ex-fsharp-paradigmas")>]
 [<assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")>]
