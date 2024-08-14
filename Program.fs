@@ -1,0 +1,73 @@
+﻿// Program.fs
+open System
+
+// 1. Funções Anônimas (lambda)
+let square = fun x -> x * x
+printfn "%d" (square 5)  // Saída: 25
+
+// 2. Funções de Alta Ordem
+// let applyTwice f x = f (f x)
+// let add3 x = x + 3
+// printfn "%d" (applyTwice add3 7)  // Saída: 13
+
+// 3. Casamento de Padrões (Pattern Matching)
+// let describeNumber x =
+//     match x with
+//     | 1 -> "One"
+//     | 2 -> "Two"
+//     | _ -> "Other"
+
+// printfn "%s" (describeNumber 2)  // Saída: Two
+
+
+// 4. Currying
+// let add x y = x + y
+// let add5 = add 5
+// printfn "%d" (add5 10)  // Saída: 15
+
+
+// 5. Listas
+// let numbers = [1; 2; 3; 4; 5]
+// let doubled = List.map (fun x -> x * 2) numbers
+// printfn "%A" doubled  // Saída: [2; 4; 6; 8; 10]
+
+
+// 6. Tuplas
+// let person = ("Lucas", 30)
+// let name, age = person
+// printfn "Name: %s, Age: %d" name age  // Saída: Name: Lucas, Age: 30
+
+// 7. Compreensão de Listas
+// let squares = [ for i in 1..5 -> i * i ]
+// printfn "%A" squares  // Saída: [1; 4; 9; 16; 25]
+
+// 8. Avaliação Preguiçosa
+// let lazyValue = lazy (printfn "Calculating..."; 10 * 2)
+// printfn "Value is not calculated yet"
+// printfn "Value: %d" (lazyValue.Force())  // Saída: Calculating...
+//                                          //        Value: 20
+
+
+// 9. Funções Recursivas
+// let rec factorial n =
+//     if n <= 1 then 1
+//     else n * factorial (n - 1)
+
+// printfn "%d" (factorial 5)  // Saída: 120
+
+
+// 10. Variáveis e Valores Imutáveis
+// let x = 10
+// // x <- 20  // Isso causaria um erro de compilação
+// let y = x + 5
+// printfn "%d" y  // Saída: 15
+
+
+// 11. Integração com Orientação a Objetos
+// type Person(name: string, age: int) =
+//     member this.Name = name
+//     member this.Age = age
+//     member this.Greet() = printfn "Hello, my name is %s and I am %d years old." this.Name this.Age
+
+// let person = Person("Lucas", 30)
+// person.Greet()  // Saída: Hello, my name is Lucas and I am 30 years old.
