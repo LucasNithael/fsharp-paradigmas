@@ -27,3 +27,4 @@ C:\Users\gilen\Documents\ex-fsharp-paradigmas\obj\Debug\net8.0\refint\ex-fsharp-
 C:\Users\gilen\Documents\ex-fsharp-paradigmas\obj\Debug\net8.0\ex-fsharp-paradigmas.pdb
 C:\Users\gilen\Documents\ex-fsharp-paradigmas\obj\Debug\net8.0\ex-fsharp-paradigmas.genruntimeconfig.cache
 C:\Users\gilen\Documents\ex-fsharp-paradigmas\obj\Debug\net8.0\ref\ex-fsharp-paradigmas.dll
+C:\Users\gilen\Documents\ex-fsharp-paradigmas\obj\Debug\net8.0\ex-fsharp-paradigmas.sourcelink.json

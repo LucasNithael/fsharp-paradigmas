@@ -1,4 +1,4 @@
-﻿// 1. Olá Mundo
+// 1. Olá Mundo
 // [<EntryPoint>]
 // let main argv =
 //     printfn "Olá Mundo"
